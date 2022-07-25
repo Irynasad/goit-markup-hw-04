@@ -181,14 +181,16 @@ button {
   letter-spacing: 0.02em;
   color: var(--secondary-color-text-white-them);
 }
-.contact-list-icon:hover,
-.contact-list-icon:focus {
-  fill: currentColor;
+
+.contact-mail:hover .contact-list-icon,
+.contact-tel:hover .contact-list-icon {
+  fill: var(--accent-color);
 }
-.header-contakt:hover,
-.header-contakt:focus {
+.contact-mail:hover,
+.contact-tel:hover {
   color: var(--accent-color);
 }
+
 /* =============/HEADER===================== */
 /* =============HERO======================== */
 .hero {
