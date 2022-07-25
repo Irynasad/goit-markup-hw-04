@@ -183,11 +183,15 @@ button {
 }
 
 .contact-mail:hover .contact-list-icon,
-.contact-tel:hover .contact-list-icon {
+.contact-tel:hover .contact-list-icon,
+.contact-mail:focus .contact-list-icon,
+.contact-tel:focus .contact-list-icon {
   fill: var(--accent-color);
 }
 .contact-mail:hover,
-.contact-tel:hover {
+.contact-tel:hover,
+.contact-mail:focus,
+.contact-tel:focus {
   color: var(--accent-color);
 }
 
