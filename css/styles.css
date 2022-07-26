@@ -82,6 +82,8 @@ button {
 .link {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  align-items: center;
 }
 
 /* ==========COMPONENTS================= */
@@ -171,6 +173,7 @@ button {
 .contact-list-icon {
   align-items: center;
   margin-right: 10px;
+  fill: currentColor;
 }
 .header-contakt {
   display: flex;
@@ -199,7 +202,7 @@ button {
 /* =============HERO======================== */
 .hero {
   background-color: var(--hero-background);
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -207,8 +210,10 @@ button {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../css/шапка.jpg);
+    url(../images/шапка.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -341,7 +346,7 @@ button {
   text-align: center;
   font-size: var(--secondary-font-size);
   color: var(--secondary-color-text-white-them);
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .social-list {
   display: flex;
@@ -350,24 +355,21 @@ button {
 }
 .social-list-link {
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: var(--white-background);
   justify-content: center;
   align-items: center;
+  color: var(--icon-color);
 }
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
+  color: var(--primery-color-text-dark-them);
 }
 
 .social-list-icon {
-  fill: var(--icon-color);
-}
-.social-list-icon:hover,
-.social-list-icon:focus {
-  fill: var(--primery-color-text-dark-them);
+  fill: currentColor;
 }
 
 /* ============/STAFF=================== */
@@ -378,29 +380,22 @@ button {
   gap: 30px;
 }
 .client-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  justify-content: center;
-  align-items: center;
-}
-.client-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: var(--icon-color);
 }
 .client-list-icon {
-  fill: var(--icon-color);
-}
-
-.client-list-item:hover .client-list-icon,
-.client-list-item:focus .client-list-icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 .client-list-link:hover,
 .client-list-link:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 /*==============/CLIENTS==================*/
 /*=============PORTFOLIO================*/
@@ -437,7 +432,10 @@ button {
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-item:hover {
+.portfolio-card {
+  display: block;
+}
+.portfolio-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -503,10 +501,10 @@ button {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-top: 12px;
 }
 .footer-conteiner {
   display: flex;
+  align-items: baseline;
 }
 .footer-social-list {
   display: flex;
@@ -522,6 +520,7 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
+  fill: var(--primery-color-text-dark-them);
 }
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
